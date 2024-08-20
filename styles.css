@@ -86,18 +86,21 @@ body{
 /***********/
 
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr)); 
-    border: 0.1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-sizing: border-box;
+    border: 0.1px solid black;
     border-radius: 3px;
-    margin-left: 5px;
-    padding: 10px 10px;
-    width: 100%;
   }
 
   .image-gallery {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row, with space between */
+    box-sizing: border-box;
     position: relative;
-    overflow: hidden;
+    padding: 10px 10px;
+
+    
   }
   
   .image-gallery img {
@@ -105,25 +108,26 @@ body{
     width: 100%;
     height: auto;
     object-fit: cover; 
-    padding: 3px 3px;
-  }
-
-  .page-number{
     width: 100%;
-    height: auto;
-    border-radius: 1px;
-    padding: 10px 0 ;
-    display: flex;
-    margin-left: 100%;
   }
 
-  .page-number a{
-    text-decoration: none;
-    color: black;
-    padding: 0 10px;
-    font-size: 1.5rem;
+  .image-gallery .h3{
+    width: 100%;
+    position: relative;
+    font-size: 0.4rem;
+    text-align: center;
+    background-color: white;
+    padding: 3px 0;
+  }
+
+
+  .image-gallery:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.01); 
   }
 .page-number a:hover{opacity:  1; color: orangered;}
+
 
 @media screen and (max-width: 300px){
     .header{
