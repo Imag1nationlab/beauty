@@ -95,12 +95,11 @@ body{
   }
 
   .image-gallery {
-    flex: 1 1 calc(33.333% - 20px); /* 3 items per row, with space between */
+    flex: 1 1 calc(33.333% - 10px); /* 3 items per row, with space between */
     box-sizing: border-box;
     position: relative;
-    padding: 10px 10px;
+    padding: 30px 30px;
 
-    
   }
   
   .image-gallery img {
@@ -114,10 +113,10 @@ body{
   .image-gallery .h3{
     width: 100%;
     position: relative;
-    font-size: 0.4rem;
+    font-size: 1.9rem;
     text-align: center;
-    background-color: white;
-    padding: 3px 0;
+    padding: 10px 0;
+
   }
 
 
@@ -157,7 +156,11 @@ body{
     .dropdown-content ul li a{
         font-size: 0.1rem;
     }
-    }
+
+    .gallery-container .image-gallery .h3{
+      font-size: 0.19rem;
+      }
+}
 
 @media screen and (max-width: 375px){
 .header{
@@ -187,6 +190,9 @@ body{
 .dropdown-content ul li a{
     font-size: 0.5rem;
 }
+.gallery-container .image-gallery .h3{
+    font-size: 0.5rem;
+    }
 }
 
 
@@ -218,7 +224,10 @@ body{
     .dropdown-content ul li a{
         font-size: 0.5rem;
     }
-   
+
+    .gallery-container .image-gallery .h3{
+        font-size: 0.5rem;
+    }
 }
 @media (max-width: 768px){
     .header{
@@ -227,28 +236,30 @@ body{
     }
     
     .tittle{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .home a {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .gp a{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     
     .ui a{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .cine a{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .dropbtn a{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .dropdown-content ul li a{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
-   
+    .gallery-container .image-gallery .h3{
+        font-size: 0.6em;
+        }
 }
 
 @media (max-width: 1400px){
@@ -258,27 +269,30 @@ body{
     }
     
     .tittle{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .home a {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .gp a{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     
     .ui a{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .cine a{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .dropbtn a{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .dropdown-content ul li a{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
+    .gallery-container .image-gallery .h3{
+        font-size: 1rem;
+        }
 }
 
 
